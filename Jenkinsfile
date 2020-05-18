@@ -8,7 +8,7 @@ agent { label 'master' }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                echo 'checking'
             }
         }
         stage('Deploy') {
