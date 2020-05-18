@@ -1,10 +1,9 @@
 pipeline {
-agent { dockerfile true }
 node('master') {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                echo 'docker build -t test:1 .'
             }
         }
         stage('Test') {
