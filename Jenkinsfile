@@ -1,5 +1,6 @@
 pipeline {
 agent { dockerfile true }
+node('master') {
     stages {
         stage('Build') {
             steps {
@@ -18,5 +19,4 @@ agent { dockerfile true }
         }
     }
 }
-
-
+}
