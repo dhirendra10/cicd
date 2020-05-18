@@ -3,7 +3,7 @@ agent { label 'master' }
     stages {
         stage('Build') {
             steps {
-                sh 'docker build -t test:1 .'
+                sh 'sudo docker build -t test:1 .'
             }
         }
         stage('Test') {
