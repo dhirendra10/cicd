@@ -8,7 +8,7 @@ agent { label 'master' }
         }
         stage('Test') {
             steps {
-                sh 'sudo docker-compose up config'
+                sh 'sudo docker-compose config'
             }
         }
         stage('Deploy') {
