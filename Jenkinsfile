@@ -8,7 +8,7 @@ agent { label 'master' }
         }
         stage('Test') {
             steps {
-                echo 'checking'
+                echo 'sudo docker-compose up -d'
             }
         }
         stage('Deploy') {

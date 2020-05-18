@@ -1,0 +1,7 @@
+version: '3'
+services:
+     web01:
+       image: test:1
+       container_name: test01
+       ports:
+          - "90:80"
