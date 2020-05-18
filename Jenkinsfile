@@ -8,12 +8,12 @@ agent { label 'master' }
         }
         stage('Test') {
             steps {
-                echo 'sudo docker-compose up -d'
+                echo 'sudo docker-compose up config'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                echo 'sudo docker-compose up -d'
             }
         }
     }
