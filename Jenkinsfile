@@ -1,5 +1,5 @@
 pipeline {
-agent { label 'master' }
+agent { label 'buyersfrontpp' }
     stages {
         stage('Build') {
             steps {
